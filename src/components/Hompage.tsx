@@ -40,12 +40,12 @@ const Hompage = () => {
 
   return (
     <>
-      <h1>Spaceflight News</h1>
-      <Container>
+      <Container className="backgroundContainer">
+        <h1 className="titleFont mb-4">Spaceflight News</h1>
         <Row>
           {newsArry.map((news, i) => {
             return (
-              <Col xs={6}>
+              <Col xs={6} className="mb-4">
                 <SingleNews news={news} key={`index-${i}`} />
               </Col>
             );

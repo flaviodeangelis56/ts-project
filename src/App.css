@@ -1,3 +1,12 @@
+body {
+  background-image: url(https://www.textures4photoshop.com/tex/thumbs/newspaper-background-texture-free-thumb33.jpg);
+}
+.backgroundContainer {
+  background-color: white;
+}
+.titleFont {
+  font-size: 400%;
+}
 .App {
   text-align: center;
 }

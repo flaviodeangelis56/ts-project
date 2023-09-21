@@ -26,8 +26,9 @@ class SingleNews extends Component<SingleNewsProps> {
         <Card.Body>
           <Card.Title>{this.props.news.title}</Card.Title>
           <Card.Text>{this.props.news.published_at}</Card.Text>
-
-          <Button variant="primary">Show dettails</Button>
+          <Link to={"/NewsDettails/" + this.props.news.id}>
+            <Button variant="primary">Show dettails</Button>
+          </Link>
         </Card.Body>
       </Card>
     );
