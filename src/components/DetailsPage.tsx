@@ -1,3 +1,3 @@
-const DetailsPage = () ={
-    
-}
+const DetailsPage = () => {
+  return <div></div>;
+};

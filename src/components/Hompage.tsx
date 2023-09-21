@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import SingleNews from "./SingleNews";
 
 interface news {
@@ -12,8 +12,8 @@ interface news {
   published_at: string;
   updated_at: string;
   featured: boolean;
-  launches: string;
-  events: string;
+  launches: [];
+  events: [];
 }
 
 const Hompage = () => {
@@ -44,7 +44,11 @@ const Hompage = () => {
       <Container>
         <Row>
           {newsArry.map((news, i) => {
-            <SingleNews news={news} key={`index-${i}`} />;
+            return (
+              <Col xs={6}>
+                <SingleNews news={news} key={`index-${i}`} />
+              </Col>
+            );
           })}
         </Row>
       </Container>
